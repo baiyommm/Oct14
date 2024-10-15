@@ -1,0 +1,9 @@
+#ignoring specific file
+.env
+#ignoring file extension type
+*.xcodeproj
+#adding an exception
+!main.cpp
+!functions.cpp
+!functions.h
+

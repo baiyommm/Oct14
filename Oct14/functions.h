@@ -3,10 +3,10 @@
 
 namespace ProgramFunctions {
     // Function to dynamically add a number to the array
-    void addNumber(int*& numbers, int& size, int input);
+    void addNumToArr(int*& numbers, int& size, int input);
 
-    // Function to calculate the sum of the array
-    int calculateSum(int* numbers, int size);
+    // Calculate the sum of array
+    int calcSumArr(int* numbers, int size);
 }
 
 #endif

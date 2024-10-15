@@ -3,19 +3,19 @@
 namespace ProgramFunctions {
 
     // Function to dynamically add a number to the array
-    void addNumber(int*& numbers, int& size, int input) {
-        // Dynamically allocate a new array with increased size
+    void addNumToArr(int*& numbers, int& size, int input) {
+        // code to dynamically allocate (new array with increased size by +1)
         int* newNumbers = new int[size + 1];
 
-        // Copy old array elements to the new array
+        // Copy old array to the new array
         for (int i = 0; i < size; i++) {
             newNumbers[i] = numbers[i];
         }
 
-        // Add the new input number to the new array
+        // Add the new input to the new array
         newNumbers[size] = input;
 
-        // Delete the old array and point to the new one
+        // Delete the old array and point to the new array
         delete[] numbers;
         numbers = newNumbers;
 
@@ -24,7 +24,7 @@ namespace ProgramFunctions {
     }
 
     // Function to calculate the sum of the array
-    int calculateSum(int* numbers, int size) {
+    int calcSumArr(int* numbers, int size) {
         int sum = 0;
         for (int i = 0; i < size; i++) {
             sum += numbers[i];
